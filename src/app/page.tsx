@@ -22,23 +22,31 @@ export default function HomePage() {
         <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-12 md:grid-cols-2 md:py-16">
           <div className="text-white">
             <p className="text-sm tracking-[0.3em] text-steam">
-              ONSEN REPORT SITE
+              ONSEN CONSULTANT
             </p>
             <h1 className="mt-3 font-serif text-3xl font-bold leading-relaxed md:text-4xl">
-              日本全国の温泉を、
+              温泉の専門知識で、
               <br />
-              自らの足で巡って紹介。
+              企業・地域・社会を動かす。
             </h1>
             <p className="mt-4 max-w-md text-sm leading-relaxed text-steam">
-              泉質・特徴・都道府県から、あなたにぴったりの温泉を探せます。
-              （この文章は仮です。サイトの紹介文に差し替えてください）
+              企業へのコンサルティング、自治体の温泉地振興支援、テレビ・雑誌・Web へのメディア出演。
+              温泉専門家として、幅広い形で社会に貢献しています。
             </p>
-            <Link
-              href="/report"
-              className="mt-6 inline-block rounded-full bg-yu px-6 py-3 text-sm font-bold text-white transition-opacity hover:opacity-85"
-            >
-              温泉レポートを見る
-            </Link>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Link
+                href="/contact"
+                className="inline-block rounded-full bg-yu px-6 py-3 text-sm font-bold text-white transition-opacity hover:opacity-85"
+              >
+                仕事のご依頼はこちら
+              </Link>
+              <Link
+                href="/report"
+                className="inline-block rounded-full border border-steam px-6 py-3 text-sm font-bold text-steam transition-colors hover:bg-white/10"
+              >
+                温泉レポートを見る
+              </Link>
+            </div>
           </div>
           <img
             src="/images/placeholder-hero-onsen.svg"
@@ -68,21 +76,74 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* About */}
+      {/* サービス紹介 */}
       <section className="bg-paper">
         <div className="mx-auto max-w-6xl px-4 py-12">
-          <SectionTitle eyebrow="About" title="このサイトについて" />
-          <p className="max-w-2xl text-sm leading-relaxed text-gray-700">
-            このサイトは、温泉専門家が日本全国の温泉を自らの足で巡り、
-            五感で泉質を分析して紹介する温泉レポートサイトです。
-            （この文章は仮です。実際のサイト紹介文に差し替えてください）
-          </p>
-          <Link
-            href="/about"
-            className="mt-4 inline-block text-sm font-bold text-yu underline hover:no-underline"
-          >
-            詳しく見る
-          </Link>
+          <SectionTitle eyebrow="Services" title="専門家としての支援内容" />
+          <div className="grid gap-6 sm:grid-cols-3">
+            {/* 企業コンサルティング */}
+            <div className="rounded-lg border border-steam bg-white p-6">
+              <p className="text-2xl">🏢</p>
+              <h3 className="mt-3 font-serif text-lg font-bold text-indigo-deep">
+                企業コンサルティング
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                温泉施設の経営改善・商品開発・スタッフ研修など、
+                温泉を軸にしたビジネス課題を専門知識で解決します。
+              </p>
+              <Link
+                href="/contact"
+                className="mt-4 inline-block text-sm font-bold text-yu underline hover:no-underline"
+              >
+                相談・依頼はこちら
+              </Link>
+            </div>
+
+            {/* 自治体支援 */}
+            <div className="rounded-lg border border-steam bg-white p-6">
+              <p className="text-2xl">🗾</p>
+              <h3 className="mt-3 font-serif text-lg font-bold text-indigo-deep">
+                自治体支援
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                温泉地の観光振興・地域ブランディング・PR 戦略の立案など、
+                自治体と連携して地域の温泉資源を活かす支援を行います。
+              </p>
+              <Link
+                href="/contact"
+                className="mt-4 inline-block text-sm font-bold text-yu underline hover:no-underline"
+              >
+                相談・依頼はこちら
+              </Link>
+            </div>
+
+            {/* メディア出演 */}
+            <div className="rounded-lg border border-steam bg-white p-6">
+              <p className="text-2xl">📺</p>
+              <h3 className="mt-3 font-serif text-lg font-bold text-indigo-deep">
+                メディア出演
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                テレビ・ラジオ・雑誌・Web メディアへの出演・寄稿・監修。
+                温泉の正しい知識をわかりやすく伝えます。
+              </p>
+              <Link
+                href="/media"
+                className="mt-4 inline-block text-sm font-bold text-yu underline hover:no-underline"
+              >
+                出演実績を見る
+              </Link>
+            </div>
+          </div>
+
+          <div className="mt-6 text-right">
+            <Link
+              href="/about"
+              className="inline-block text-sm font-bold text-indigo underline hover:no-underline"
+            >
+              北出温泉について詳しく見る
+            </Link>
+          </div>
         </div>
       </section>
 
