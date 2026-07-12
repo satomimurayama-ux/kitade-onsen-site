@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#22405C"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" opacity="0.9">
+    <path d="M340 300 q-25 -45 0 -90 q25 -45 0 -90"/>
+    <path d="M400 310 q-25 -45 0 -90 q25 -45 0 -90"/>
+    <path d="M460 300 q-25 -45 0 -90 q25 -45 0 -90"/>
+  </g>
+  <path d="M240 360 h320 a20 20 0 0 1 20 20 q0 90 -180 90 q-180 0 -180 -90 a20 20 0 0 1 20 -20 z" fill="#FFFFFF" opacity="0.9"/>
+  <text x="400" y="520" font-family="sans-serif" font-size="34" fill="#FFFFFF" text-anchor="middle">仮画像：トップページのメイン画像</text>
+</svg>

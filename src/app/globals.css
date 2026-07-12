@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* サイト全体の基本スタイル。色はtailwind.config.tsで定義しています */
+body {
+  @apply bg-white text-gray-800 antialiased;
+}
+
+/* アニメーションを減らす設定のユーザーへの配慮 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
