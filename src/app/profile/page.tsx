@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import type { Metadata } from "next";
 import Link from "next/link";
+import { assetPath } from "@/lib/paths";
 import Breadcrumb from "@/components/Breadcrumb";
 import SectionTitle from "@/components/SectionTitle";
 
@@ -114,7 +115,7 @@ export default function ProfilePage() {
 
           <div className="flex justify-center">
             <img
-              src="/images/placeholder-noimage.svg"
+              src={assetPath("/images/placeholder-noimage.svg")}
               alt="北出恭子のプロフィール写真（仮）"
               width={320}
               height={320}

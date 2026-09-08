@@ -4,6 +4,7 @@ import type { Report } from "@/lib/types";
 import { getPrefecture } from "@/data/prefectures";
 import { getFeature } from "@/data/features";
 import { getQuality } from "@/data/qualities";
+import { assetPath } from "@/lib/paths";
 import TagBadge from "@/components/TagBadge";
 
 /**
@@ -19,7 +20,7 @@ export default function ReportCard({ report }: { report: Report }) {
     <article className="overflow-hidden rounded-lg border border-steam bg-white shadow-sm transition-shadow hover:shadow-md">
       <Link href={`/report/${report.slug}`} className="block">
         <img
-          src={report.thumbnail}
+          src={assetPath(report.thumbnail)}
           alt={report.thumbnailAlt}
           width={800}
           height={600}

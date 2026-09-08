@@ -5,6 +5,7 @@ import { getAllReports, getReport } from "@/lib/reports";
 import { getPrefecture } from "@/data/prefectures";
 import { getFeature } from "@/data/features";
 import { getQuality } from "@/data/qualities";
+import { assetPath } from "@/lib/paths";
 import Breadcrumb from "@/components/Breadcrumb";
 import SpecTable from "@/components/SpecTable";
 import TagBadge from "@/components/TagBadge";
@@ -80,7 +81,7 @@ export default function ReportDetailPage({ params }: Props) {
       </header>
 
       <img
-        src={report.thumbnail}
+        src={assetPath(report.thumbnail)}
         alt={report.thumbnailAlt}
         width={800}
         height={600}

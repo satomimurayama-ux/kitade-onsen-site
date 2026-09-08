@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getAllReports } from "@/lib/reports";
 import { features } from "@/data/features";
 import { qualities } from "@/data/qualities";
+import { assetPath } from "@/lib/paths";
 import ReportCard from "@/components/ReportCard";
 import PrefectureSearch from "@/components/PrefectureSearch";
 import SectionTitle from "@/components/SectionTitle";
@@ -49,7 +50,7 @@ export default function HomePage() {
             </div>
           </div>
           <img
-            src="/images/placeholder-hero-onsen.svg"
+            src={assetPath("/images/placeholder-hero-onsen.svg")}
             alt="仮画像：湯けむりの上がる温泉のイラスト"
             width={800}
             height={600}
